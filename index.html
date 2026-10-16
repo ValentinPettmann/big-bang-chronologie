@@ -14,6 +14,7 @@
       <p class="subtitle">De l'ère de Planck (10<sup>-43</sup> s) à l'Univers actuel (13,8 milliards d'années)</p>
     </div>
     <div class="header-meta" aria-live="polite">
+      <button type="button" class="badge badge-btn" id="btn-open-intro" aria-label="Afficher l'écran d'introduction">? Comprendre l'échelle</button>
       <span class="badge" id="era-step-counter">Étape 1 / 13</span>
       <span class="badge badge-log" id="era-log-indicator">log₁₀(t/s) ≈ -43</span>
     </div>
@@ -61,15 +62,24 @@
       </div>
     </section>
 
-    <!-- Panneau d'informations scientifiques -->
+    <!-- Panneau d'informations scientifiques vulgarisées -->
     <aside class="info-panel" aria-live="polite" aria-atomic="true">
       <div class="info-card">
-        <div class="era-category" id="info-category">Univers primordial</div>
-        <h2 class="era-title" id="info-title">Ère de Planck</h2>
+        <div class="info-header-row">
+          <div class="era-category" id="info-category">Univers quantique primordial</div>
+          <h2 class="era-title" id="info-title">Ère de Planck</h2>
+        </div>
+
+        <div class="era-summary-box">
+          <span class="summary-label">En une phrase</span>
+          <p class="era-summary" id="info-summary">
+            <!-- Injecté par app.js -->
+          </p>
+        </div>
 
         <div class="era-metrics-grid">
           <div class="metric-box">
-            <span class="metric-label">Intervalle de temps</span>
+            <span class="metric-label">Temps après le Big Bang</span>
             <strong class="metric-val" id="info-time">0 à 10⁻⁴³ s</strong>
           </div>
           <div class="metric-box">
@@ -80,6 +90,13 @@
 
         <div class="era-description" id="info-description">
           <!-- Injecté par app.js -->
+        </div>
+
+        <div class="era-analogy-box">
+          <span class="analogy-label">Repère du quotidien</span>
+          <p class="era-analogy" id="info-analogy">
+            <!-- Comparaison concrète injectée par app.js -->
+          </p>
         </div>
 
         <div class="era-highlights" id="info-highlights">
@@ -96,8 +113,8 @@
   <!-- Frise chronologique logarithmique (log10 du temps en secondes) -->
   <section class="timeline-section" aria-label="Frise chronologique logarithmique en secondes">
     <div class="timeline-header">
-      <h2 class="timeline-title">Frise chronologique logarithmique — <code>log₁₀(t en secondes)</code> de -43 à +17,6</h2>
-      <span class="timeline-subtitle">Cliquez sur un marqueur pour explorer une époque</span>
+      <h2 class="timeline-title">Frise chronologique logarithmique — <code>log₁₀(t en secondes)</code> de -43 à +17,6 <span class="timeline-scale-note">(chaque graduation d'exposant +1 = 10× plus longtemps)</span></h2>
+      <span class="timeline-subtitle">Cliquez sur un point pour explorer une époque</span>
     </div>
 
     <div class="timeline-container" id="timeline-container">
@@ -113,6 +130,31 @@
       </div>
     </div>
   </section>
+
+  <!-- Écran d'introduction superposé (accessible au grand public) -->
+  <div class="intro-overlay" id="intro-overlay" role="dialog" aria-modal="true" aria-labelledby="intro-title" aria-describedby="intro-desc">
+    <div class="intro-modal" role="document">
+      <span class="intro-badge">Guide de visite</span>
+      <h2 class="intro-title" id="intro-title">Voyage dans l'histoire de l'Univers</h2>
+      <div class="intro-body" id="intro-desc">
+        <p>
+          Explorez en <strong>13 étapes</strong> la grande histoire du cosmos, depuis sa toute première fraction de seconde brûlante (10<sup>-43</sup> s) jusqu'aux étoiles et galaxies d'aujourd'hui (13,8 milliards d'années).
+        </p>
+        <p>
+          <strong>Comment lire la frise en bas ?</strong> Comme tout s'est joué en d'infimes fractions de seconde au début puis sur des milliards d'années ensuite, la frise utilise une <em>échelle logarithmique</em> : chaque graduation d'une unité vers la droite multiplie le temps écoulé par <strong>10</strong> (10× plus longtemps).
+        </p>
+        <p>
+          <strong>Comment naviguer ?</strong> Utilisez les boutons <strong>Précédent / Lecture / Suivant</strong>, cliquez sur n'importe quel point de la frise, ou utilisez le clavier (<kbd>←</kbd> <kbd>→</kbd> pour changer d'étape, <kbd>Espace</kbd> pour lancer ou mettre en pause).
+        </p>
+      </div>
+      <div class="intro-actions">
+        <button type="button" id="btn-start-journey" class="ctrl-btn ctrl-btn-primary intro-start-btn">
+          Commencer le voyage
+        </button>
+        <span class="intro-dismiss-hint">Cliquez ou appuyez sur <kbd>Entrée</kbd> / <kbd>Échap</kbd> pour fermer</span>
+      </div>
+    </div>
+  </div>
 
   <script src="js/app.js"></script>
 </body>

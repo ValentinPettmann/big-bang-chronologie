@@ -5,6 +5,10 @@ Application web statique autonome en français illustrant l'histoire de l'Univer
 ## Caractéristiques
 
 - **100 % autonome** : aucune dépendance externe, aucun CDN, aucune police distante (chemins relatifs uniquement).
+- **Accessible au grand public** :
+  - **Écran d'introduction** (`role="dialog"`, fermable au clic, avec `Entrée` ou `Échap`) expliquant le parcours, la lecture de l'échelle logarithmique (chaque graduation d'exposant +1 = 10× plus longtemps) et les contrôles.
+  - **Explications vulgarisées en français simple** pour chaque ère, avec termes scientifiques expliqués en une ligne.
+  - **Résumé « En une phrase »** mis en évidence et **repères du quotidien** (analogies numériquement justes sur les durées, températures et tailles) pour rendre les ordres de grandeur concrets, tout en conservant toutes les valeurs scientifiques exactes.
 - **Animation Canvas 2D dédiée** pour chacune des **13 étapes cosmologiques** :
   1. Ère de Planck ($0$ à $10^{-43}\text{ s}$, $\sim 10^{32}\text{ K}$)
   2. Ère de grande unification ($10^{-43}$ à $10^{-36}\text{ s}$, $\sim 10^{28}\text{–}10^{32}\text{ K}$)
@@ -20,7 +24,7 @@ Application web statique autonome en français illustrant l'histoire de l'Univer
   12. Galaxies ($\sim 400\text{ Ma}$ à $1\text{ Ga}$)
   13. Aujourd'hui ($13,8\text{ milliards d'années}$, $2,725\text{ K}$)
 - **Frise chronologique logarithmique** ($\log_{10}(t\text{ en secondes})$) avec marqueurs interactifs cliquables.
-- **Navigation accessible et responsive** : boutons *Précédent*, *Lecture/Pause*, *Suivant*, raccourcis clavier (`←`, `→`, `Espace`) et attributs `aria-label`.
+- **Navigation accessible et responsive** : boutons *Précédent*, *Lecture/Pause*, *Suivant*, raccourcis clavier (`←`, `→`, `Espace`, `Échap`, `Entrée`), mise en page ajustée pour tenir sans défilement sur écran desktop ($1366 \times 800$) tout en restant fluide sur mobile.
 
 ## Structure du projet
 

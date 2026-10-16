@@ -15,6 +15,7 @@
 
   /**
    * Définition complète des 13 étapes cosmologiques requises
+   * Valeurs scientifiques exactes conservées ; textes vulgarisés pour le grand public
    * logT : position représentative en log10(secondes) sur la frise chronologique
    */
   const ERAS = [
@@ -27,11 +28,15 @@
       temperature: '~10³² K',
       logT: -43,
       logDisplay: 'log₁₀(t/s) ≤ -43',
+      summary:
+        "Le tout premier instant de l'Univers, si brûlant et minuscule que l'espace et le temps y bouillonnent comme de l'écume.",
       description:
-        "Durant l'ère de Planck, les quatre forces fondamentales (gravité, électromagnétisme, interactions nucléaires forte et faible) sont unifiées en une seule « superforce ». Les effets de la gravité quantique dominent : l'espace-temps lui-même fluctue violemment à l'échelle de Planck (~10⁻³⁵ m) sous forme d'une « mousse quantique ».",
+        "Tout commence dans un état de chaleur et de densité inimaginables. Les quatre forces de la nature (la gravité, l'électromagnétisme et les deux forces nucléaires au cœur des atomes) ne font encore qu'une seule « superforce ». À une échelle infime (~10⁻³⁵ m), l'espace et le temps se déforment sans cesse : nos lois physiques actuelles atteignent ici leur limite.",
+      analogy:
+        "10⁻⁴³ s, c'est à une seconde ce qu'une seconde est à 3 × 10³⁵ ans (soit plus de 2 × 10²⁵ fois l'âge actuel de l'Univers !). Et ~10³² K, c'est plus de 6 millions de milliards de milliards (6 × 10²⁴) de fois la température au cœur du Soleil (15 millions de degrés).",
       highlights: [
-        '<strong>Unification totale :</strong> les 4 interactions fondamentales sont indiscernables.',
-        '<strong>Limite physique actuelle :</strong> nécessite une théorie de la gravité quantique au-delà de la relativité générale.'
+        '<strong>Superforce unique :</strong> gravité, électromagnétisme et forces nucléaires sont totalement fusionnées.',
+        '<strong>Mousse quantique (~10⁻³⁵ m) :</strong> échelle minuscule où l’espace et le temps fluctuent violemment.'
       ],
       legend: [
         { color: '#ffffff', label: 'Fluctuations d’espace-temps' },
@@ -41,17 +46,21 @@
     {
       id: 'gut',
       shortLabel: 'G.U.T.',
-      category: 'Brisure de symétrie primordiale',
+      category: 'Séparation de la gravité',
       title: 'Ère de grande unification',
       timeRange: '10⁻⁴³ à 10⁻³⁶ s',
       temperature: '~10²⁸ à 10³² K',
       logT: -39.5,
       logDisplay: 'log₁₀(t/s) ≈ -43 à -36',
+      summary:
+        "La gravité se détache des autres forces, tandis que la matière n'est encore qu'une soupe d'énergie où tout se transforme.",
       description:
-        "À la fin de l'ère de Planck, la gravitation se sépare des trois autres forces. Les interactions électromagnétique, faible et forte demeurent unifiées au sein d'une force dite de Grande Unification (GUT). D'hypothétiques bosons X et Y extrêmement massifs convertissent librement quarks et leptons.",
+        "L'Univers grandit et refroidit légèrement. La gravité (la force qui nous retient au sol et fait tourner les planètes) se sépare des trois autres forces. Ces trois forces restent unies en une seule force dite de « Grande Unification » (GUT). Les futures briques de la matière — quarks (composants des noyaux) et leptons (famille de l'électron) — se changent encore librement les unes dans les autres.",
+      analogy:
+        "10⁻³⁶ s, c'est à un milliardième de seconde (10⁻⁹ s) ce qu'un milliardième de seconde est à 10¹⁸ s, soit 31,7 milliards d'années (plus de deux fois l'âge de l'Univers). En ce temps infime, la lumière n'avance que de 3 × 10⁻²⁸ m, moins d'un mille-milliardème de la taille d'un proton.",
       highlights: [
-        '<strong>Séparation de la gravité :</strong> la gravitation devient une interaction distincte.',
-        '<strong>Symétrie GUT :</strong> quarks et leptons interagissent via les bosons de jauge X et Y.'
+        '<strong>Gravité indépendante :</strong> la gravitation se détache et commence à gouverner la forme de l’espace.',
+        '<strong>Grande Unification (GUT) :</strong> quarks (briques des noyaux) et leptons (famille de l’électron) sont encore indiscernables.'
       ],
       legend: [
         { color: '#ffd54f', label: 'Gravitation séparée' },
@@ -61,17 +70,21 @@
     {
       id: 'inflation',
       shortLabel: 'Inflation',
-      category: 'Expansion exponentielle',
+      category: 'Expansion fulgurante',
       title: 'Inflation cosmique',
       timeRange: '~10⁻³⁶ à 10⁻³² s',
       temperature: '~10²⁷ à 10²⁸ K (chute rapide, puis réchauffement)',
       logT: -34,
       logDisplay: 'log₁₀(t/s) ≈ -36 à -32',
+      summary:
+        "En une fraction infime de seconde, l'Univers gonfle d'un facteur gigantesque (10²⁶) et sème les graines des futures galaxies.",
       description:
-        "Déclenchée par la séparation de l'interaction forte ou la décroissance du champ d'inflaton, l'inflation dilate l'Univers d'un facteur d'au moins 10²⁶ en une fraction infime de seconde. Elle aplanit la géométrie cosmique, homogénéise la température et étire les fluctuations quantiques microscopiques qui deviendront les graines des futures galaxies.",
+        "Soudain, l'espace s'étire à une vitesse prodigieuse : sa taille est multipliée par au moins 10²⁶ (un 1 suivi de 26 zéros) en un clin d'œil cosmique. Cet étirement géant aplatit l'Univers et égalise sa température partout. En même temps, de minuscules frémissements d'énergie (fluctuations quantiques) sont agrandis à l'échelle du cosmos : ils deviendront les berceaux des futures galaxies.",
+      analogy:
+        "Grossir d'un facteur 10²⁶, c'est comme si une minuscule molécule d'un nanomètre (10⁻⁹ m, un millionième de millimètre) gonflait d'un coup pour atteindre 10¹⁷ m, soit 10,6 années-lumière — plus de deux fois la distance entre le Soleil et l'étoile la plus proche !",
       highlights: [
-        '<strong>Expansion vertigineuse :</strong> le volume de l’Univers croît de manière exponentielle.',
-        '<strong>Réchauffement :</strong> l’énergie du champ d’inflaton se convertit en un bain dense de particules.'
+        '<strong>Dilatation ×10²⁶ :</strong> le volume de l’Univers croît de façon vertigineuse en moins de 10⁻³² s.',
+        '<strong>Réchauffement final :</strong> l’énergie de cette inflation se convertit en un bain dense de particules.'
       ],
       legend: [
         { color: '#4dd0e1', label: 'Trame spatiale en dilatation' },
@@ -81,17 +94,21 @@
     {
       id: 'electroweak',
       shortLabel: 'Électrofaible',
-      category: 'Ère des champs de jauge',
+      category: 'Naissance de la masse',
       title: 'Ère électrofaible',
       timeRange: '10⁻³² à 10⁻¹² s',
       temperature: '~10¹⁵ à 10²⁷ K',
       logT: -22,
       logDisplay: 'log₁₀(t/s) ≈ -32 à -12',
+      summary:
+        "Les quatre forces de la nature prennent leur forme définitive et les particules acquièrent enfin une masse grâce au champ de Higgs.",
       description:
-        "L'interaction forte est désormais distincte, tandis que l'électromagnétisme et l'interaction faible restent fusionnés en une force électrofaible. Vers 10⁻¹² s (~10¹⁵ K), le champ de Higgs acquiert une valeur non nulle dans le vide : c'est la brisure de symétrie électrofaible qui confère une masse aux bosons W, Z, aux quarks et aux leptons.",
+        "La force nucléaire forte (qui soudera plus tard les noyaux d'atomes) est désormais séparée. Vers 10⁻¹² s (~10¹⁵ K), un champ invisible présent dans tout l'espace, le « champ de Higgs », s'active. En freinant les particules qui le traversent, il leur donne une masse : sans lui, tout filerait à la vitesse de la lumière et aucun atome n'existerait.",
+      analogy:
+        "10⁻¹² s (un millième de milliardième de seconde), c'est à une seconde ce qu'une seconde est à 31 700 ans (10¹² s, l'époque des peintures de la grotte Chauvet). Durant ce laps de temps, la lumière n'avance que de 0,3 millimètre, l'épaisseur d'un grain de sable fin.",
       highlights: [
-        '<strong>Mécanisme de Higgs :</strong> les particules élémentaires acquièrent leur masse vers 10⁻¹² s.',
-        '<strong>Bosons W, Z et photons :</strong> séparation finale des 4 forces fondamentales connues.'
+        '<strong>Champ de Higgs (10⁻¹² s) :</strong> agit comme une mélasse cosmique qui donne leur masse aux particules.',
+        '<strong>Bosons W, Z et photons :</strong> les 4 forces fondamentales connues sont désormais toutes distinctes.'
       ],
       legend: [
         { color: '#ffd740', label: 'Champ de Higgs actif' },
@@ -101,17 +118,21 @@
     {
       id: 'quarks',
       shortLabel: 'Quarks',
-      category: 'Plasma primordial',
+      category: 'Soupe primordiale',
       title: 'Ère des quarks',
       timeRange: '10⁻¹² à 10⁻⁶ s',
       temperature: '~10¹² à 10¹⁵ K',
       logT: -9,
       logDisplay: 'log₁₀(t/s) ≈ -12 à -6',
+      summary:
+        "L'Univers est un océan brûlant de briques élémentaires libres où la matière l'emporte d'un cheveu sur l'antimatière.",
       description:
-        "Les quatre forces fondamentales ont pris leur forme actuelle, mais la température et la densité sont encore trop élevées pour que les quarks se lient en hadrons. L'Univers est rempli d'un plasma dense et ultra-chaud de quarks et de gluons libres, accompagné de leptons. Une légère asymétrie matière-antimatière (~1 milliardième) prépare la survie de la matière.",
+        "Il fait encore trop chaud pour que les noyaux d'atomes se forment. L'espace est rempli d'une soupe ultra-chaude de « quarks » (les briques élémentaires qui formeront protons et neutrons) et de « gluons » (les particules-colle qui transmettent la force forte). Matière et antimatière s'entrechoquent, mais un léger excès d'une particule de matière sur un milliard (10⁹) prépare notre existence.",
+      analogy:
+        "En 10⁻⁶ s (un millionième de seconde), un rayon de lumière parcourt tout juste 300 mètres, soit la hauteur de la tour Eiffel. Et le surplus de matière (1 sur 10⁹), c'est comme s'il restait 1 seul centime après une dépense de 10 millions d'euros : tout l'Univers visible vient de ce centime !",
       highlights: [
-        '<strong>Plasma quarks-gluons :</strong> les quarks circulent librement sans être confinés.',
-        '<strong>Baryogénèse :</strong> léger excès d’environ 1 particule de matière pour 10⁹ paires matière-antimatière.'
+        '<strong>Plasma quarks-gluons :</strong> soupe dense où quarks et gluons circulent librement sans être enfermés.',
+        '<strong>1 sur un milliard (10⁹) :</strong> minuscule surplus de matière face à l’antimatière (baryogénèse).'
       ],
       legend: [
         { color: '#ff5252', label: 'Quarks u, d, s… libres' },
@@ -121,17 +142,21 @@
     {
       id: 'hadrons',
       shortLabel: 'Hadrons',
-      category: 'Confinement de la matière',
+      category: 'Naissance des protons & neutrons',
       title: 'Ère des hadrons',
       timeRange: '10⁻⁶ s à 1 s',
       temperature: '~10¹⁰ à 10¹² K',
       logT: -3,
       logDisplay: 'log₁₀(t/s) ≈ -6 à 0',
+      summary:
+        "En refroidissant sous 10¹² K, les quarks s'assemblent par trois pour former les premiers protons et neutrons.",
       description:
-        "Lorsque la température descend sous ~10¹² K, les quarks ne peuvent plus exister à l'état libre : ils s'assemblent par trois (baryons : protons et neutrons) ou par paires quark-antiquark (mésons). La quasi-totalité des hadrons et antihadrons s'annihilent en photons, ne laissant subsister que le minuscule reliquat de protons et de neutrons.",
+        "Quand la température passe sous ~10¹² K, les quarks ne peuvent plus rester isolés : ils s'accrochent par trois pour former des « hadrons » (particules faites de quarks, comme le proton et le neutron). Presque tous les hadrons et leurs doubles d'antimatière se détruisent mutuellement en produisant un immense bain de lumière (photons). Seul le petit surplus de protons et de neutrons survit.",
+      analogy:
+        "L'Univers atteint enfin l'âge d'une seconde — la durée d'un battement de cœur humain ! À 10¹² K (mille milliards de degrés), il fait pourtant encore 67 000 fois plus chaud qu'au cœur du Soleil (15 millions de kelvins).",
       highlights: [
-        '<strong>Confinement des quarks :</strong> naissance des protons et des neutrons.',
-        '<strong>Annihilation baryon-antibaryon :</strong> production massive de photons énergétiques.'
+        '<strong>Hadron :</strong> particule composée de quarks soudés ensemble, comme le proton et le neutron (3 quarks chacun).',
+        '<strong>Éclairs de lumière :</strong> l’annihilation matière-antimatière transforme l’essentiel des hadrons en photons.'
       ],
       legend: [
         { color: '#ff7043', label: 'Protons (uud)' },
@@ -142,17 +167,21 @@
     {
       id: 'leptons',
       shortLabel: 'Leptons',
-      category: 'Domination leptonique',
+      category: 'Règne des particules légères',
       title: 'Ère des leptons',
       timeRange: '1 s à 10 s',
       temperature: '~10⁹ à 10¹⁰ K',
       logT: 0.5,
       logDisplay: 'log₁₀(t/s) ≈ 0 à 1',
+      summary:
+        "Les particules légères comme les électrons dominent l'Univers, tandis que les neutrinos s'échappent pour voyager sans fin.",
       description:
-        "Après l'annihilation des hadrons, les leptons (électrons, muons, taus, neutrinos) et leurs antiparticules dominent la masse-énergie de l'Univers. Vers t ≈ 1 s, les neutrinos se découplent de la matière et commencent à voyager librement. Vers t ≈ 10 s, électrons et positrons s'annihilent à leur tour, ne laissant qu'un léger excès d'électrons.",
+        "Ce sont maintenant les « leptons » qui dominent : cette famille de particules légères comprend les électrons et les neutrinos (particules fantômes qui traversent tout sans effort). Dès t ≈ 1 s, les neutrinos se libèrent de la matière et filent en ligne droite dans le cosmos. Vers t ≈ 10 s, les électrons et leurs anti-particules (positrons) s'annihilent, ne laissant que les électrons de nos futurs atomes.",
+      analogy:
+        "De 1 à 10 secondes, c'est le temps d'une profonde inspiration. Les neutrinos libérés à la 1ʳᵉ seconde remplissent toujours l'Univers : il reste aujourd'hui environ 336 neutrinos du Big Bang par centimètre cube d'espace, soit plus de 100 000 dans le volume d'un verre d'eau (33 cL) !",
       highlights: [
-        '<strong>Découplage des neutrinos (~1 s) :</strong> création du fond cosmologique de neutrinos.',
-        '<strong>Annihilation e⁻ / e⁺ :</strong> réchauffe le bain de photons cosmiques.'
+        '<strong>Lepton :</strong> particule élémentaire légère insensible à la force forte, comme l’électron ou le neutrino.',
+        '<strong>Découplage des neutrinos (~1 s) :</strong> premier rayonnement fossile libéré dans tout l’Univers.'
       ],
       legend: [
         { color: '#40c4ff', label: 'Électrons (e⁻)' },
@@ -169,11 +198,15 @@
       temperature: '~10⁹ K (de 10⁹ à ~3×10⁸ K)',
       logT: 2.5,
       logDisplay: 'log₁₀(t/s) ≈ 1 à 3,1',
+      summary:
+        "En vingt minutes, l'Univers agit comme un four géant et fabrique les premiers noyaux d'hydrogène (75 %) et d'hélium (25 %).",
       description:
-        "La température ayant suffisamment baissé (~1 milliard de kelvins), protons et neutrons fusionnent sans être immédiatement brisés par les photons gamma. En moins de vingt minutes se forment les premiers noyaux légers : deutérium, hélium-4 et traces de lithium-7. La matière baryonique atteint sa composition primordiale : ~75 % d'hydrogène (¹H) et ~25 % d'hélium (⁴He) en masse.",
+        "La température a assez baissé (~1 milliard de kelvins) pour que protons et neutrons fusionnent durablement sans être aussitôt brisés par la chaleur. En moins de 20 minutes naissent les premiers noyaux d'atomes légers (nucléosynthèse). La recette de la matière ordinaire est fixée pour tout le cosmos : ~75 % d'hydrogène (¹H) et ~25 % d'hélium (⁴He) en masse, avec d'infimes traces de lithium.",
+      analogy:
+        "20 minutes (1 200 s), c'est le temps de cuisson d'un gâteau au four : à 10⁹ K (67 fois la température au cœur du Soleil), sur 100 grammes de matière ordinaire formée, 75 g sont de l'hydrogène et 25 g de l'hélium. L'hydrogène de l'eau (H₂O) que vous buvez date de ces 20 premières minutes !",
       highlights: [
-        '<strong>75 % Hydrogène / 25 % Hélium en masse :</strong> abondance universelle confirmée par l’observation.',
-        '<strong>Traces légères :</strong> deutérium (²H), hélium-3 (³He) et lithium-7 (⁷Li).'
+        '<strong>75 % Hydrogène / 25 % Hélium en masse :</strong> proportion universelle exacte de la matière ordinaire (baryonique).',
+        '<strong>Noyaux légers :</strong> formation du deutérium (²H), de l’hélium-3 (³He), de l’hélium-4 (⁴He) et de traces de lithium-7 (⁷Li).'
       ],
       legend: [
         { color: '#ff5252', label: 'Hydrogène ¹H (75 % masse)' },
@@ -189,11 +222,15 @@
       temperature: '~3 000 K',
       logT: 13.08,
       logDisplay: 'log₁₀(t/s) ≈ 13,1',
+      summary:
+        "Les noyaux capturent enfin les électrons pour former les premiers atomes : le brouillard se lève et la première lumière s'échappe.",
       description:
-        "Durant des centaines de milliers d'années (ère des photons), l'Univers est un brouillard opaque de plasma où les photons diffusent sans cesse sur les électrons libres. Vers 380 000 ans, à ~3 000 K, les électrons sont capturés par les noyaux d'hydrogène et d'hélium pour former les premiers atomes neutres (recombinaison). Les photons se libèrent enfin : c'est le Fond Diffus Cosmologique (CMB).",
+        "Pendant 380 000 ans, l'Univers reste un brouillard lumineux mais opaque où les grains de lumière (photons) rebondissent sans cesse sur les électrons libres. À ~3 000 K, les noyaux d'hydrogène et d'hélium capturent enfin ces électrons pour former les premiers atomes neutres (recombinaison). L'espace devient aussitôt transparent : la lumière file librement, formant le Fond Diffus Cosmologique (CMB), plus ancienne image du cosmos.",
+      analogy:
+        "Si les 13,8 milliards d'années de l'Univers étaient la vie d'une personne de 100 ans (36 525 jours), 380 000 ans correspondrait au moment où ce bébé a tout juste 1 jour ! Et 3 000 K (~2 730 °C), c'est la température du filament d'une ampoule halogène : tout le ciel brillait alors d'une lueur orangée.",
       highlights: [
-        '<strong>Atomes neutres :</strong> les électrons se lient aux noyaux H et He.',
-        '<strong>Découplage des photons :</strong> émission de la première lumière fossile observable (CMB).'
+        '<strong>Atomes complets :</strong> chaque noyau s’entoure d’électrons, mettant fin au brouillard de plasma.',
+        '<strong>Fond Diffus Cosmologique (CMB) :</strong> première lumière fossile de l’Univers, encore observable aujourd’hui.'
       ],
       legend: [
         { color: '#ffb74d', label: 'Photons du Fond Diffus (libérés)' },
@@ -209,11 +246,15 @@
       temperature: '~3 000 K à ~60 K',
       logT: 14.8,
       logDisplay: 'log₁₀(t/s) ≈ 13,1 à 15,8',
+      summary:
+        "Sans aucune étoile encore allumée, l'Univers plonge dans une longue nuit noire où la gravité rassemble patiemment le gaz.",
       description:
-        "Après la recombinaison, les photons du fond diffus se décalent vers l'infrarouge avec l'expansion. Aucune étoile n'étant encore allumée, l'Univers plonge dans une obscurité totale. Dans l'ombre, la matière noire et le gaz d'hydrogène neutre (émettant la raie à 21 cm) s'effondrent lentement sous l'effet de la gravitation dans les filaments cosmiques.",
+        "Avec l'expansion de l'espace, la lueur orangée initiale s'étire vers l'infrarouge, invisible à nos yeux. Comme aucune étoile n'existe encore, l'Univers plonge dans une obscurité totale pendant plus de cent millions d'années. Dans le noir, la « matière noire » (une masse invisible mais cinq fois plus abondante que la matière ordinaire) attire lentement le gaz d'hydrogène par gravité.",
+      analogy:
+        "En descendant jusqu'à 60 K (-213 °C), l'espace devient plus froid que l'azote liquide (77 K, soit -196 °C). Sur une vie humaine de 80 ans, cette longue nuit sans étoiles (~150 millions d'années sur 13,8 milliards) représente près de 11 mois passés dans le noir complet.",
       highlights: [
-        '<strong>Aucune source de lumière visible :</strong> aucune étoile n’existe encore.',
-        '<strong>Effondrement gravitationnel :</strong> les halos de matière noire attirent le gaz primordial.'
+        '<strong>Obscurité totale :</strong> aucune étoile n’est encore allumée dans le cosmos.',
+        '<strong>Matière noire et hydrogène (raie 21 cm) :</strong> le gaz neutre s’accumule doucement dans des filaments invisibles.'
       ],
       legend: [
         { color: '#5c6bc0', label: 'Halos de matière noire' },
@@ -229,11 +270,15 @@
       temperature: '~30 à 60 K (fond cosmique)',
       logT: 15.67,
       logDisplay: 'log₁₀(t/s) ≈ 15,5 à 15,8',
+      summary:
+        "Les toutes premières étoiles géantes s'allument, déchirent l'obscurité et forgent les premiers atomes de carbone, d'oxygène et de fer.",
       description:
-        "Au cœur des halos les plus denses, le gaz d'hydrogène et d'hélium se comprime jusqu'à amorcer la fusion thermonucléaire : les étoiles de Population III s'allument. Géantes, très chaudes et dépourvues d'éléments lourds, elles émettent un rayonnement ultraviolet intense qui réionise le gaz environnant et forgent, lors de leurs supernovae, les premiers atomes de carbone, d'oxygène et de fer.",
+        "Comprimé par la gravité au cœur des régions les plus denses, le gaz d'hydrogène et d'hélium s'échauffe jusqu'à déclencher la fusion nucléaire : les premières étoiles (dites de « Population III ») s'allument ! Géantes et ultra-brillantes, elles inondent les environs de lumière ultraviolette (réionisation). En explosant en « supernovae », elles fabriquent les premiers atomes lourds : carbone, oxygène et fer.",
+      analogy:
+        "Ces étoiles géantes pesaient plus de 100 fois la masse du Soleil : si notre Soleil pesait autant qu'une pomme (100 g), l'une d'elles pèserait plus de 10 kg ! Elles brûlaient leur carburant si vite qu'elles ne vivaient que quelques millions d'années, plus de 1 000 fois moins longtemps que le Soleil.",
       highlights: [
-        '<strong>Étoiles de Population III :</strong> massives (100+ masses solaires) et à courte durée de vie.',
-        '<strong>Nucléosynthèse stellaire :</strong> création des premiers éléments lourds (carbone, oxygène, fer).'
+        '<strong>Étoiles de Population III :</strong> géantes de plus de 100 masses solaires, nées uniquement d’hydrogène et d’hélium.',
+        '<strong>Supernovae (explosions d’étoiles) :</strong> forgent le carbone, l’oxygène et le fer indispensables à la vie.'
       ],
       legend: [
         { color: '#80d8ff', label: 'Étoiles primordiales (Pop III)' },
@@ -249,11 +294,15 @@
       temperature: '~15 à 25 K',
       logT: 16.3,
       logDisplay: 'log₁₀(t/s) ≈ 16,1 à 16,5',
+      summary:
+        "Les amas d'étoiles et les nuages de gaz fusionnent en immenses tourbillons lumineux : les premières galaxies prennent forme.",
       description:
-        "Les amas d'étoiles et les nuages de gaz enrichis fusionnent au sein de vastes halos de matière noire pour former les premières proto-galaxies, puis des galaxies spirales et elliptiques structurées. Des trous noirs supermassifs croissent en leur centre (quasars), et la réionisation complète de l'Univers intergalactique s'achève autour de 1 milliard d'années.",
+        "Attirés par la gravité, les amas d'étoiles et les nuages de gaz enrichis se rassemblent pour former d'immenses cités d'étoiles : les galaxies. D'abord petites, elles fusionnent entre elles pour donner de grandes galaxies spirales ou elliptiques. En leur cœur grandissent des trous noirs géants très lumineux (« quasars »), et la lumière stellaire achève de rendre tout l'espace intergalactique transparent vers 1 milliard d'années.",
+      analogy:
+        "À 1 milliard d'années, l'Univers a ~7,2 % de son âge actuel, comme un enfant de 6 ans par rapport à un adulte de 80 ans. Une grande galaxie comme notre Voie lactée mesure ~100 000 années-lumière : même à 300 000 km/s, la lumière met 100 000 ans à la traverser !",
       highlights: [
-        '<strong>Fusions hiérarchiques :</strong> assemblage des galaxies le long de la toile cosmique.',
-        '<strong>Fin de la réionisation (~1 Ga) :</strong> le milieu intergalactique redevient ionisé et transparent.'
+        '<strong>Fusions de galaxies :</strong> les petites galaxies s’assemblent le long des filaments de la toile cosmique.',
+        '<strong>Quasars & fin de la réionisation (~1 Ga) :</strong> trous noirs supermassifs actifs au cœur des jeunes galaxies.'
       ],
       legend: [
         { color: '#ffd180', label: 'Bulbes galactiques & Quasars' },
@@ -269,11 +318,15 @@
       temperature: '2,725 K',
       logT: 17.64,
       logDisplay: 'log₁₀(t/s) ≈ +17,64',
+      summary:
+        "13,8 milliards d'années après le Big Bang, des centaines de milliards de galaxies peuplent un cosmos glacé dont l'expansion s'accélère.",
       description:
-        "13,8 milliards d'années après le Big Bang, le fond diffus cosmologique s'est refroidi jusqu'à 2,725 K (-270,425 °C). Des milliards de galaxies s'organisent en amas et filaments formant la toile cosmique. Le Système solaire est né il y a 4,6 milliards d'années à partir des poussières d'anciennes étoiles, et l'expansion de l'Univers s'accélère sous l'effet de l'énergie sombre.",
+        "Après 13,8 milliards d'années (~4,35 × 10¹⁷ s), la chaleur originelle du fond diffus s'est refroidie jusqu'à 2,725 K (-270,425 °C). Notre Soleil et la Terre sont nés il y a 4,6 milliards d'années à partir des poussières d'anciennes étoiles. Aujourd'hui, l'Univers contient ~5 % de matière ordinaire (baryonique), ~27 % de matière noire et ~68 % d'« énergie sombre », qui accélère son expansion.",
+      analogy:
+        "Si les 13,8 milliards d'années de l'Univers étaient condensés en une seule année (où 1 seconde = 438 ans), le Soleil et la Terre naîtraient début septembre, les dinosaures disparaîtraient le 30 décembre, et toute l'histoire d'Homo sapiens (300 000 ans) tiendrait dans les 11 dernières minutes avant minuit le 31 décembre !",
       highlights: [
-        '<strong>Température du CMB :</strong> 2,725 K mesurée avec une précision remarquable.',
-        '<strong>Bilan énergétique :</strong> ~68 % énergie sombre, ~27 % matière noire, ~5 % matière baryonique.'
+        '<strong>Température du CMB (2,725 K) :</strong> à peine 2,725 degrés au-dessus du zéro absolu (-273,15 °C).',
+        '<strong>Bilan énergétique :</strong> ~68 % énergie sombre, ~27 % matière noire, ~5 % matière baryonique (ordinaire).'
       ],
       legend: [
         { color: '#64ffda', label: 'Toile cosmique & Galaxies' },
@@ -286,6 +339,7 @@
   const state = {
     currentIndex: 0,
     isPlaying: false,
+    isIntroOpen: true,
     autoplayDurationMs: 6500, // 6,5 s par étape en lecture automatique
     autoplayElapsedMs: 0,
     lastFrameTime: performance.now(),
@@ -304,9 +358,11 @@
 
   const infoCategory = document.getElementById('info-category');
   const infoTitle = document.getElementById('info-title');
+  const infoSummary = document.getElementById('info-summary');
   const infoTime = document.getElementById('info-time');
   const infoTemp = document.getElementById('info-temp');
   const infoDesc = document.getElementById('info-description');
+  const infoAnalogy = document.getElementById('info-analogy');
   const infoHighlights = document.getElementById('info-highlights');
 
   const btnPrev = document.getElementById('btn-prev');
@@ -320,6 +376,10 @@
   const timelineAxis = document.getElementById('timeline-axis');
   const timelineTrackFill = document.getElementById('timeline-track-fill');
   const timelineMarkers = document.getElementById('timeline-markers');
+
+  const introOverlay = document.getElementById('intro-overlay');
+  const btnStartJourney = document.getElementById('btn-start-journey');
+  const btnOpenIntro = document.getElementById('btn-open-intro');
 
   /**
    * Convertit une valeur log10(t en s) en pourcentage horizontal [0, 100] sur la frise
@@ -415,9 +475,15 @@
 
     infoCategory.textContent = era.category;
     infoTitle.textContent = era.title;
+    if (infoSummary) {
+      infoSummary.textContent = era.summary;
+    }
     infoTime.textContent = era.timeRange;
     infoTemp.textContent = era.temperature;
     infoDesc.textContent = era.description;
+    if (infoAnalogy) {
+      infoAnalogy.textContent = era.analogy;
+    }
 
     // Points clés
     infoHighlights.innerHTML = `<ul>${era.highlights.map((h) => `<li>${h}</li>`).join('')}</ul>`;
@@ -901,20 +967,6 @@
         ctx.fill();
       });
     });
-
-    // Bandeau de jauge visuelle 75% H / 25% He en masse
-    const barW = Math.min(260, w * 0.65);
-    const barH = 10;
-    const bx = cx - barW / 2;
-    const by = h - 48;
-    ctx.fillStyle = '#ff5252';
-    ctx.fillRect(bx, by, barW * 0.75, barH);
-    ctx.fillStyle = '#ffd54f';
-    ctx.fillRect(bx + barW * 0.75, by, barW * 0.25, barH);
-    ctx.fillStyle = '#ffffff';
-    ctx.font = '600 11px sans-serif';
-    ctx.textAlign = 'center';
-    ctx.fillText('75 % H (masse)  |  25 % ⁴He (masse)', cx, by - 6);
   }
 
   // 9. Recombinaison & Fond Diffus Cosmologique (~380 000 ans, ~3000 K)
@@ -1148,6 +1200,32 @@
   }
 
   /**
+   * Gestion de l'écran d'introduction superposé (accessible au clavier et à la souris)
+   */
+  function openIntro() {
+    if (!introOverlay) return;
+    state.isIntroOpen = true;
+    introOverlay.hidden = false;
+    introOverlay.setAttribute('aria-hidden', 'false');
+    if (btnStartJourney) {
+      btnStartJourney.focus();
+    }
+  }
+
+  function closeIntro() {
+    if (!introOverlay || !state.isIntroOpen) return;
+    state.isIntroOpen = false;
+    introOverlay.hidden = true;
+    introOverlay.setAttribute('aria-hidden', 'true');
+    if (document.activeElement && introOverlay.contains(document.activeElement)) {
+      document.activeElement.blur();
+    }
+    if (btnPlay) {
+      btnPlay.focus();
+    }
+  }
+
+  /**
    * Boucle d'animation principale (requestAnimationFrame)
    */
   function animate(now) {
@@ -1174,9 +1252,31 @@
   }
 
   /**
-   * Écouteurs d'événements (Boutons, Clavier, Redimensionnement)
+   * Écouteurs d'événements (Boutons, Clavier, Redimensionnement, Introduction)
    */
   function bindEvents() {
+    if (btnStartJourney) {
+      btnStartJourney.addEventListener('click', (e) => {
+        e.stopPropagation();
+        closeIntro();
+      });
+    }
+
+    if (introOverlay) {
+      introOverlay.addEventListener('click', () => {
+        closeIntro();
+      });
+    }
+
+    if (btnOpenIntro) {
+      btnOpenIntro.addEventListener('click', () => {
+        if (state.isPlaying) {
+          togglePlay(false);
+        }
+        openIntro();
+      });
+    }
+
     btnPrev.addEventListener('click', () => {
       selectEra(state.currentIndex - 1, true);
     });
@@ -1189,8 +1289,19 @@
       togglePlay();
     });
 
-    // Navigation clavier (Flèches gauche/droite, Barre d'espace)
+    // Navigation clavier (Échap/Entrée pour l'intro, Flèches gauche/droite, Barre d'espace)
     window.addEventListener('keydown', (e) => {
+      if (state.isIntroOpen) {
+        if (e.key === 'Escape' || e.key === 'Enter') {
+          e.preventDefault();
+          closeIntro();
+        } else if (e.key === 'Tab' && btnStartJourney) {
+          e.preventDefault();
+          btnStartJourney.focus();
+        }
+        return;
+      }
+
       // Ignorer si l'utilisateur tape dans un champ de saisie
       if (['INPUT', 'TEXTAREA', 'SELECT'].includes(document.activeElement?.tagName)) {
         return;
@@ -1203,11 +1314,8 @@
         e.preventDefault();
         selectEra(state.currentIndex + 1, true);
       } else if (e.key === ' ' || e.code === 'Space') {
-        // Si le focus est déjà sur un bouton, laisser le comportement natif ou basculer la lecture
-        if (document.activeElement?.tagName !== 'BUTTON') {
-          e.preventDefault();
-          togglePlay();
-        }
+        e.preventDefault();
+        togglePlay();
       }
     });
 
@@ -1220,6 +1328,7 @@
     bindEvents();
     resizeCanvas();
     selectEra(0, true);
+    openIntro();
     requestAnimationFrame(animate);
   }
 
