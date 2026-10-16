@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Animation interactive en français illustrant la chronologie du Big Bang, de l'ère de Planck à nos jours.">
+  <title>Chronologie du Big Bang — Exploration Cosmique Interactive</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-titles">
+      <h1>Chronologie du Big Bang</h1>
+      <p class="subtitle">De l'ère de Planck (10<sup>-43</sup> s) à l'Univers actuel (13,8 milliards d'années)</p>
+    </div>
+    <div class="header-meta" aria-live="polite">
+      <span class="badge" id="era-step-counter">Étape 1 / 13</span>
+      <span class="badge badge-log" id="era-log-indicator">log₁₀(t/s) ≈ -43</span>
+    </div>
+  </header>
+
+  <main class="app-layout">
+    <!-- Zone d'animation Canvas -->
+    <section class="canvas-panel" aria-label="Visualisation animée de l'ère cosmologique">
+      <div class="canvas-wrapper">
+        <canvas id="cosmos-canvas" role="img" aria-label="Animation de l'ère cosmologique actuelle"></canvas>
+        <div class="canvas-overlay-top">
+          <div class="hud-metric">
+            <span class="hud-label">Temps cosmique</span>
+            <span class="hud-value" id="hud-time">0 à 10⁻⁴³ s</span>
+          </div>
+          <div class="hud-metric">
+            <span class="hud-label">Température</span>
+            <span class="hud-value" id="hud-temp">~10³² K</span>
+          </div>
+        </div>
+        <div class="canvas-legend" id="canvas-legend" aria-hidden="true"></div>
+      </div>
+
+      <!-- Contrôles de lecture -->
+      <div class="controls-bar" role="region" aria-label="Contrôles de navigation et lecture">
+        <button type="button" id="btn-prev" class="ctrl-btn" aria-label="Ère précédente (Flèche gauche)" title="Ère précédente (←)">
+          <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path fill="currentColor" d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"/></svg>
+          <span class="btn-text">Précédent</span>
+        </button>
+
+        <button type="button" id="btn-play" class="ctrl-btn ctrl-btn-primary" aria-label="Lancer la lecture automatique (Espace)" aria-pressed="false" title="Lecture / Pause (Espace)">
+          <svg id="icon-play" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path fill="currentColor" d="M8 5v14l11-7z"/></svg>
+          <svg id="icon-pause" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" hidden><path fill="currentColor" d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/></svg>
+          <span id="play-label">Lecture</span>
+        </button>
+
+        <button type="button" id="btn-next" class="ctrl-btn" aria-label="Ère suivante (Flèche droite)" title="Ère suivante (→)">
+          <span class="btn-text">Suivant</span>
+          <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path fill="currentColor" d="M8.59 16.59L10 18l6-6-6-6-1.41 1.41L13.17 12z"/></svg>
+        </button>
+
+        <div class="autoplay-progress-wrap" title="Progression de l'étape en mode lecture automatique">
+          <div class="autoplay-progress-bar" id="autoplay-progress"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Panneau d'informations scientifiques -->
+    <aside class="info-panel" aria-live="polite" aria-atomic="true">
+      <div class="info-card">
+        <div class="era-category" id="info-category">Univers primordial</div>
+        <h2 class="era-title" id="info-title">Ère de Planck</h2>
+
+        <div class="era-metrics-grid">
+          <div class="metric-box">
+            <span class="metric-label">Intervalle de temps</span>
+            <strong class="metric-val" id="info-time">0 à 10⁻⁴³ s</strong>
+          </div>
+          <div class="metric-box">
+            <span class="metric-label">Température moyenne</span>
+            <strong class="metric-val metric-temp" id="info-temp">~10³² K</strong>
+          </div>
+        </div>
+
+        <div class="era-description" id="info-description">
+          <!-- Injecté par app.js -->
+        </div>
+
+        <div class="era-highlights" id="info-highlights">
+          <!-- Points clés injectés par app.js -->
+        </div>
+
+        <div class="keyboard-hint">
+          <span>Raccourcis : <kbd>←</kbd> <kbd>→</kbd> changer d'ère · <kbd>Espace</kbd> lecture/pause</span>
+        </div>
+      </div>
+    </aside>
+  </main>
+
+  <!-- Frise chronologique logarithmique (log10 du temps en secondes) -->
+  <section class="timeline-section" aria-label="Frise chronologique logarithmique en secondes">
+    <div class="timeline-header">
+      <h2 class="timeline-title">Frise chronologique logarithmique — <code>log₁₀(t en secondes)</code> de -43 à +17,6</h2>
+      <span class="timeline-subtitle">Cliquez sur un marqueur pour explorer une époque</span>
+    </div>
+
+    <div class="timeline-container" id="timeline-container">
+      <!-- Axe gradué log10(t/s) -->
+      <div class="timeline-axis" id="timeline-axis" aria-hidden="true"></div>
+      <!-- Barre de progression sur l'axe log -->
+      <div class="timeline-track">
+        <div class="timeline-track-fill" id="timeline-track-fill"></div>
+      </div>
+      <!-- Marqueurs cliquables des 13 ères -->
+      <div class="timeline-markers" id="timeline-markers" role="tablist" aria-label="Étapes de la chronologie du Big Bang">
+        <!-- Généré dynamiquement par js/app.js -->
+      </div>
+    </div>
+  </section>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
